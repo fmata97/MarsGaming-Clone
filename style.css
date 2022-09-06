@@ -480,6 +480,12 @@ footer {
     .benefit-container {
         display: block;
     }
+    #right-benefit {
+        border-top-width: 0px;
+    }
+    #middle-benefit {
+        border-top-width: 0px;
+    }
     .benefit {
         border-width: 0.5px;
     }
