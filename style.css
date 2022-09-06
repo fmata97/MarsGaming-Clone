@@ -267,20 +267,85 @@ header p {
 }
 
 
-.vantage-container {
+.benefit-container {
+    margin: 100px 15px;
     font-family: Roboto;
-    font-weight: normal;
-    font-size: 16px;
+    font-weight: lighter;
+    font-size: 13px;
     display: flex;
     justify-content: center;
 }
 
-.vantage {
-    display: none;
-    padding: 30px;
-    border: #1d1d1b;
+.benefit-container i {
+    align-self: center;
+    font-size: 30px;
+    padding: 0px 10px;
 }
 
+.benefit {
+    display: flex;
+    border-width: 0.5px;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-right-width: 0px;
+    padding: 30px;
+    align-self: center;
+}
+
+#right-benefit {
+    border-right-width: 0.5px;
+}
+
+.benefit-text {
+    align-self: center;
+}
+
+
+footer {
+    min-height: 100px;
+    height: fit-content;
+    width: 100%;
+    background-color: #0D0F0E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-left {
+    width: 15%;
+}
+
+.footer-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links {
+    font-family: Roboto;
+    font-weight: lighter;
+    font-size: 12px;
+    color: #EEEEEE;
+    display: flex;
+    justify-self: center;
+}
+
+.footer-link {
+    padding: 15px;
+    opacity: 70%;
+}
+
+.footer-link:hover {
+    opacity: 100%;
+}
+
+.footer-logo {
+    padding: 0px 15px;
+}
+
+.footer-payments {
+    padding: 15px 20px;
+}
 
 @media(max-width:1370px){
     .hamb-button {
@@ -330,6 +395,18 @@ header p {
         padding: 30px 10px;
         margin: 20px 30px;
     }
+
+    footer {
+        flex-direction: column;
+        height: 150px;
+        justify-content: space-around;
+    }
+    .footer-left {
+        display: none;
+    }
+    .footer-payments {
+        padding-top: 5px;
+    }
 }
 
 /* esconder o hamb button em large */
@@ -368,6 +445,23 @@ header p {
     .product-container {
         padding: 30px 0px;
     }
+    .benefit-container i {
+        font-size: 25px;
+    }
+    .benefit-text {
+        font-size: 10px;
+    }
+
+    .footer-links {
+        margin: 0px 10px;
+    }
+    .footer-center {
+        flex-direction: column;
+    }
+    .footer-logo {
+        padding-top: 10px;
+    }
+
 }
 
 @media(max-width:576px) {
@@ -382,5 +476,23 @@ header p {
     }
     .filters {
         justify-content: center;
+    }
+    .benefit-container {
+        display: block;
+    }
+    .benefit {
+        border-width: 0.5px;
+    }
+    .benefit-text {
+        font-size: 13px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        flex-flow: wrap;
+        align-items: center;
+    }
+    .footer-link {
+        font-size: 10px;
     }
 }
